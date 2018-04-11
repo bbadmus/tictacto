@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tic Tac To</string>
+    <string name="reset">Reset</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="two_players">TWO PLAYERS</string>
+    <string name="one_player">ONE PLAYER</string>
+    <string name="easy">EASY MODE</string>
+    <string name="difficult">DIFFICULT MODE</string>
+    <string name="single_device">Single Device</string>
+    <string name="double_device">Two Devices</string>
+    <string name="play">Play</string>
+    <string name="Highscore">Highscore</string>
+    <string name="your_name">Your Name</string>
+    <string name="find_opponent">Find Opponent</string>
+    <string name="player_1_name">Player 1 Name</string>
+    <string name="player_2_name">Player 2 Name</string>
+</resources>

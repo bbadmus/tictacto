@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.bukola.TicTacTo.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Play TictacTo"
+        android:gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_margin="24dp"
+        android:id="@+id/playtictacto"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playtictacto"
+        android:text="@string/one_player"
+        android:id="@+id/one_player"
+        android:clickable="false"
+        android:background="#FFA726"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/two_players"
+        android:id="@+id/two_player"
+        android:background="#FFA726"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/one_player"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/RGsinglePlayer"
+        android:layout_below="@+id/one_player"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="48dp"
+        android:visibility="invisible">
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/easy"
+            android:textSize="20sp"
+            android:id="@+id/easyRBtn"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/difficult"
+            android:textSize="20sp"
+            android:id="@+id/difficultRBtn"/>
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/RGtwoPlayer"
+        android:layout_below="@+id/one_player"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:visibility="visible">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/single_device"
+            android:textSize="20sp"
+            android:id="@+id/singleRBtn"/>
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/double_device"
+            android:textSize="20sp"
+            android:id="@+id/doubleRBtn"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:background="#FFA726"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:id="@+id/play"
+        android:layout_alignParentBottom="true"/>
+z
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_marginBottom="16dp"
+        android:text="@string/Highscore"
+        android:background="#FFA726"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        android:id="@+id/highScores"/>
+
+
+</RelativeLayout>
